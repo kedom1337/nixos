@@ -1,5 +1,14 @@
-{ inputs, ... }:
+{ inputs, homeStateVersion, user, ... }:
 {
+  imports = [
+    inputs.home-manager.nixosModules.default
+  ];
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs homeStateVersion user; };
+    users.${user} = import ../../home.nix;
+  };
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs = {
     config = {

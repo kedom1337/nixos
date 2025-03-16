@@ -5,9 +5,9 @@
   ];
 
   home = {
-    stateVersion = homeStateVersion;
     username = user;
     homeDirectory = "/home/${user}";
+    stateVersion = homeStateVersion;
 
     packages = with pkgs; [
       vesktop
@@ -26,5 +26,7 @@
     home-manager.enable = true;
     fastfetch.enable = true;
     kitty.enable = true;
+    lazygit.enable = true;
+    eza.enable = true;
   };
 }

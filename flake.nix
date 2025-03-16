@@ -15,10 +15,9 @@
       flake = false;
     };
   };
-  outputs = { nixpkgs, home-manager, ... } @inputs:
+  outputs = { self, nixpkgs, ... } @inputs:
   let
     system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
     user = "kedom";
     homeStateVersion = "24.11";
     hosts = [
@@ -30,19 +29,11 @@
       value = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {
-          inherit inputs user;
+          inherit inputs homeStateVersion user;
           inherit (host) hostname stateVersion;
         };
         modules = [ ./hosts/${host.hostname}/configuration.nix ];
       };
     }) hosts);
-
-    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
-      extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
-      };
-      modules = [ ./home.nix ];
-    };
   };
 }

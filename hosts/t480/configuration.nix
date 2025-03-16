@@ -1,9 +1,8 @@
-{ pkgs, inputs, stateVersion, ... }:
+{ stateVersion, ... }:
 {
   imports = [
     ./hardware-configuration.nix
     ../../modules/system
-    inputs.home-manager.nixosModules.default
   ];
 
   system.stateVersion = stateVersion;
