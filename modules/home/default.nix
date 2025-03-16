@@ -6,5 +6,7 @@
     ./chromium.nix
     ./git.nix
     ./dconf.nix
+    ./fonts.nix
+    ./packages.nix
   ];
 }

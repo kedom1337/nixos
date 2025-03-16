@@ -9,6 +9,15 @@
     users.${user} = import ../../home.nix;
   };
 
+  programs.nh = {
+    enable = true;
+    clean = {
+      enable = true;
+      extraArgs = "--keep-since 30d --keep 3";
+    };
+    flake = "/home/${user}/nixos";
+  };
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs = {
     config = {
