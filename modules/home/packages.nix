@@ -12,5 +12,6 @@
     kitty.enable = true;
     lazygit.enable = true;
     eza.enable = true;
+    zoxide.enable = true;
   };
 }
