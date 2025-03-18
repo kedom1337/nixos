@@ -3,12 +3,23 @@
   dconf = {
     enable = true;
     settings = {
+      # Generl gnome config
       "org/gnome/shell" = {
         disable-user-extensions = false;
 	enabled-extensions = with pkgs.gnomeExtensions; [
 	  pop-shell.extensionUuid
 	];
       };
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+	enable-hot-corners = false;
+      };
+
+      # X11 xkb options
+      "org/gnome/desktop/input-sources".xkb-options = [
+        "terminate:ctrl_alt_bksp" 
+	"caps:swapescape"
+      ];
 
       # Pop shell configuration
       "org/gnome/mutter".workspaces-only-on-primary = false;
@@ -57,13 +68,6 @@
         www = [ "<Super>b" ];
         terminal = [ "<Super>t" ];
       };
-
-      "org/gnome/desktop/interface".color-scheme = "prefer-dark";
-
-      "org/gnome/desktop/input-sources".xkb-options = [
-        "terminate:ctrl_alt_bksp" 
-	"caps:swapescape"
-      ];
     };
   };
 }

@@ -1,12 +1,17 @@
 { config, lib, ... }:
 {
   options.services = {
-    enableLaptopServices = lib.mkEnableOption "Enable laptop-specific services";
+    laptopServices = lib.mkEnableOption "Enable laptop-specific services";
   };
 
   config = {
     services = {
-      thermald.enable = config.services.enableLaptopServices;
+      thermald.enable = config.services.laptopServices;
+      power-profiles-daemon.enable = !config.services.laptopServices;
+      tlp = {
+        enable = config.services.laptopServices;
+	settings.DEVICES_TO_DISABLE_ON_STARTUP = "bluetooth";
+      };
 
       printing.enable = true;
       pulseaudio.enable = false;
