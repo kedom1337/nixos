@@ -10,8 +10,6 @@
     userSettings = {
       telemetry.metrics = false;
       vim_mode = true;
-      show_whitespaces = "all";
-      ui_font_size = 16;
     };
   };
 }

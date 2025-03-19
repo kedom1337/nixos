@@ -21,10 +21,6 @@
       "org/gnome/mutter".workspaces-only-on-primary = false;
       "org/gnome/shell/extensions/pop-shell".tile-by-default = true;
       "org/gnome/mutter/wayland/keybindings".restore-shortcuts = [ ];
-      "org/gnome/desktop/wm/preferences" = {
-        num-workspaces = 4;
-        focus-mode = "sloppy";
-      };
       "org/gnome/desktop/wm/keybindings" = {
         maximize = [ ];
         unmaximize = [ ];
