@@ -14,6 +14,7 @@
       url = "gitlab:GNOME/gvdb?ref=main&host=gitlab.gnome.org";
       flake = false;
     };
+    nvim.url = "github:kedom1337/nvim";
   };
   outputs =
     { self, nixpkgs, ... }@inputs:

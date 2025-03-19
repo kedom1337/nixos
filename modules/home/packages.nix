@@ -1,13 +1,24 @@
-{ pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    vesktop
-    bitwarden-desktop
-    gnomeExtensions.pop-shell
-    nixfmt-rfc-style
-    treefmt
-    lm_sensors
-  ];
+  inputs,
+  system,
+  pkgs,
+  ...
+}:
+{
+  home.packages =
+    with pkgs;
+    [
+      vesktop
+      bitwarden-desktop
+      gnomeExtensions.pop-shell
+      nixfmt-rfc-style
+      treefmt
+      statix
+      lm_sensors
+    ]
+    ++ (with inputs; [
+      nvim.packages.x86_64-linux.default
+    ]);
 
   programs = {
     home-manager.enable = true;
