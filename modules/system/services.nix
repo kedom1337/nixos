@@ -10,7 +10,7 @@
       power-profiles-daemon.enable = !config.services.laptopServices;
       tlp = {
         enable = config.services.laptopServices;
-	settings.DEVICES_TO_DISABLE_ON_STARTUP = "bluetooth";
+        settings.DEVICES_TO_DISABLE_ON_STARTUP = "bluetooth";
       };
 
       printing.enable = true;

@@ -5,6 +5,7 @@
     bitwarden-desktop
     gnomeExtensions.pop-shell
     nixfmt-rfc-style
+    treefmt
     lm_sensors
   ];
 

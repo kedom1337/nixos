@@ -1,4 +1,9 @@
-{ inputs, homeStateVersion, user, ... }:
+{
+  inputs,
+  homeStateVersion,
+  user,
+  ...
+}:
 {
   imports = [
     inputs.home-manager.nixosModules.default
@@ -19,7 +24,10 @@
     flake = "/home/${user}/nixos";
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   nixpkgs = {
     config = {
       allowAliases = false;
@@ -32,7 +40,7 @@
           preConfigure = ''
             cp -a "${inputs.gvdb-src}" ./subprojects/gvdb
           '';
-        }); 
+        });
       })
     ];
   };

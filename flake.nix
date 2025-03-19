@@ -15,25 +15,32 @@
       flake = false;
     };
   };
-  outputs = { self, nixpkgs, ... } @inputs:
-  let
-    system = "x86_64-linux";
-    user = "kedom";
-    homeStateVersion = "24.11";
-    hosts = [
-      { hostname = "t480"; stateVersion = "24.11"; }
-    ];
-  in {
-    nixosConfigurations = builtins.listToAttrs (map (host: {
-      name = host.hostname;
-      value = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {
-          inherit inputs homeStateVersion user;
-          inherit (host) hostname stateVersion;
-        };
-        modules = [ ./hosts/${host.hostname}/configuration.nix ];
-      };
-    }) hosts);
-  };
+  outputs =
+    { self, nixpkgs, ... }@inputs:
+    let
+      system = "x86_64-linux";
+      user = "kedom";
+      homeStateVersion = "24.11";
+      hosts = [
+        {
+          hostname = "t480";
+          stateVersion = "24.11";
+        }
+      ];
+    in
+    {
+      nixosConfigurations = builtins.listToAttrs (
+        map (host: {
+          name = host.hostname;
+          value = nixpkgs.lib.nixosSystem {
+            inherit system;
+            specialArgs = {
+              inherit inputs homeStateVersion user;
+              inherit (host) hostname stateVersion;
+            };
+            modules = [ ./hosts/${host.hostname}/configuration.nix ];
+          };
+        }) hosts
+      );
+    };
 }
