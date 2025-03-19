@@ -3,7 +3,7 @@
   dconf = {
     enable = true;
     settings = {
-      # Generl gnome config
+      # General gnome config
       "org/gnome/shell" = {
         disable-user-extensions = false;
 	enabled-extensions = with pkgs.gnomeExtensions; [
