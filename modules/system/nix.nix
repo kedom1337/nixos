@@ -7,6 +7,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs homeStateVersion user; };
     users.${user} = import ../../home.nix;
+    backupFileExtension = "backup";
   };
 
   programs.nh = {
