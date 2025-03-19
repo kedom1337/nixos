@@ -4,6 +4,8 @@
     vesktop
     bitwarden-desktop
     gnomeExtensions.pop-shell
+    nixfmt-rfc-style
+    lm_sensors
   ];
 
   programs = {

@@ -3,8 +3,8 @@
   dconf = {
     enable = true;
     settings = {
-      # General gnome config
       "org/gnome/shell" = {
+        favorite-apps = [];
         disable-user-extensions = false;
 	enabled-extensions = with pkgs.gnomeExtensions; [
 	  pop-shell.extensionUuid
@@ -14,17 +14,17 @@
         color-scheme = "prefer-dark";
 	enable-hot-corners = false;
       };
-
-      # X11 xkb options
       "org/gnome/desktop/input-sources".xkb-options = [
         "terminate:ctrl_alt_bksp" 
 	"caps:swapescape"
       ];
-
-      # Pop shell configuration
       "org/gnome/mutter".workspaces-only-on-primary = false;
       "org/gnome/shell/extensions/pop-shell".tile-by-default = true;
       "org/gnome/mutter/wayland/keybindings".restore-shortcuts = [];
+      "org/gnome/desktop/wm/preferences" = {
+        num-workspaces = 4;
+        focus-mode = "sloppy";
+      };
       "org/gnome/desktop/wm/keybindings" = {
         maximize = [];
         unmaximize = [];
@@ -50,6 +50,14 @@
 	  "<Super>q"
 	  "<Alt>F4"
 	];
+	switch-to-workspace-1 = [ "<Super>1" ];
+        switch-to-workspace-2 = [ "<Super>2" ];
+        switch-to-workspace-3 = [ "<Super>3" ];
+        switch-to-workspace-4 = [ "<Super>4" ];
+        move-to-workspace-1 = [ "<Super><Shift>1" ];
+        move-to-workspace-2 = [ "<Super><Shift>2" ];
+        move-to-workspace-3 = [ "<Super><Shift>3" ];
+        move-to-workspace-4 = [ "<Super><Shift>4" ];
       };
       "org/gnome/shell/keybindings" = {
         open-application-menu = [];
@@ -66,7 +74,15 @@
         home = [ "<Super>f" ];
         email = [ "<Super>e" ];
         www = [ "<Super>b" ];
-        terminal = [ "<Super>t" ];
+        terminal = [];
+        custom-keybindings = [
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+        ];
+      };
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+        binding = "<Super>t";
+        command = "kitty";
+        name = "Open kitty";
       };
     };
   };
