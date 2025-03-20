@@ -17,7 +17,7 @@
     nvim.url = "github:kedom1337/nvim";
   };
   outputs =
-    { self, nixpkgs, ... }@inputs:
+    { nixpkgs, ... }@inputs:
     let
       system = "x86_64-linux";
       user = "kedom";
