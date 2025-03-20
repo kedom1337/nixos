@@ -14,6 +14,7 @@
       treefmt
       statix
       lm_sensors
+      pnpm
     ]
     ++ (with inputs; [
       nvim.packages.x86_64-linux.default

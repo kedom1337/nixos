@@ -8,5 +8,6 @@
     ./chromium.nix
     ./git.nix
     ./zed.nix
+    ./bun.nix
   ];
 }
