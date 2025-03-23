@@ -9,5 +9,6 @@
     ./git.nix
     ./zed.nix
     ./bun.nix
+    ./kitty.nix
   ];
 }

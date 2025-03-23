@@ -1,6 +1,7 @@
 {
   inputs,
   pkgs,
+  system,
   ...
 }:
 {
@@ -17,13 +18,12 @@
       pnpm
     ]
     ++ (with inputs; [
-      nvim.packages.x86_64-linux.default
+      nvim.packages.${system}.default
     ]);
 
   programs = {
     home-manager.enable = true;
     fastfetch.enable = true;
-    kitty.enable = true;
     lazygit.enable = true;
     eza.enable = true;
     zoxide.enable = true;
