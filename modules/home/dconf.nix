@@ -18,7 +18,14 @@
         "terminate:ctrl_alt_bksp"
         "caps:swapescape"
       ];
-      "org/gnome/mutter".workspaces-only-on-primary = false;
+      "org/gnome/mutter" = {
+        workspaces-only-on-primary = false;
+        dynamic-workspaces = false;
+      };
+      "org/gnome/desktop/wm/preferences" = {
+        num-workspaces = 4;
+        focus-mode = "sloppy";
+      };
       "org/gnome/shell/extensions/pop-shell".tile-by-default = true;
       "org/gnome/mutter/wayland/keybindings".restore-shortcuts = [ ];
       "org/gnome/desktop/wm/keybindings" = {
@@ -59,6 +66,15 @@
         open-application-menu = [ ];
         toggle-overview = [ ];
         toggle-message-tray = [ "<Super>v" ];
+        switch-to-application-1 = [ ];
+        switch-to-application-2 = [ ];
+        switch-to-application-3 = [ ];
+        switch-to-application-4 = [ ];
+        switch-to-application-5 = [ ];
+        switch-to-application-6 = [ ];
+        switch-to-application-7 = [ ];
+        switch-to-application-8 = [ ];
+        switch-to-application-9 = [ ];
       };
       "org/gnome/mutter/keybindings" = {
         toggle-tiled-left = [ ];
