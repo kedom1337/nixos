@@ -11,7 +11,14 @@
   ];
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs system homeStateVersion user; };
+    extraSpecialArgs = {
+      inherit
+        inputs
+        system
+        homeStateVersion
+        user
+        ;
+    };
     users.${user} = import ../../home.nix;
     backupFileExtension = "backup";
   };

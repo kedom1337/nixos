@@ -36,7 +36,12 @@
           value = nixpkgs.lib.nixosSystem {
             inherit system;
             specialArgs = {
-              inherit inputs system homeStateVersion user;
+              inherit
+                inputs
+                system
+                homeStateVersion
+                user
+                ;
               inherit (host) hostname stateVersion;
             };
             modules = [ ./hosts/${host.hostname}/configuration.nix ];
