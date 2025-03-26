@@ -13,6 +13,7 @@
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
         enable-hot-corners = false;
+        show-battery-percentage = true;
       };
       "org/gnome/desktop/input-sources".xkb-options = [
         "terminate:ctrl_alt_bksp"

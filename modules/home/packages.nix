@@ -8,13 +8,18 @@
   home.packages =
     with pkgs;
     [
+      # system
+      gnomeExtensions.pop-shell
+      lm_sensors
+      # apps
       vesktop
       bitwarden-desktop
-      gnomeExtensions.pop-shell
+      vlc
+      qbittorrent
+      # dev tools
       nixfmt-rfc-style
       treefmt
       statix
-      lm_sensors
       pnpm
     ]
     ++ (with inputs; [
@@ -23,6 +28,7 @@
 
   programs = {
     home-manager.enable = true;
+    firefox.enable = true;
     fastfetch.enable = true;
     lazygit.enable = true;
     eza.enable = true;

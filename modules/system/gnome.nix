@@ -18,5 +18,6 @@
     snapshot
     totem
     yelp
+    file-roller
   ];
 }
