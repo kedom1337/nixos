@@ -27,6 +27,10 @@
           hostname = "t480";
           stateVersion = "24.11";
         }
+        {
+          hostname = "desktop";
+          stateVersion = "24.11";
+        }
       ];
     in
     {
