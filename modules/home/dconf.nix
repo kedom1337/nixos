@@ -97,6 +97,7 @@
         command = "kitty";
         name = "Open kitty";
       };
+      "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";
     };
   };
 }
