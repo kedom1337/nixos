@@ -11,6 +11,7 @@
       # system
       gnomeExtensions.pop-shell
       lm_sensors
+      pavucontrol
       # apps
       vesktop
       bitwarden-desktop
