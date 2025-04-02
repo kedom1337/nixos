@@ -18,6 +18,7 @@
       vlc
       qbittorrent
       # dev tools
+      ripgrep
       nixfmt-rfc-style
       treefmt
       statix
@@ -36,5 +37,6 @@
     lazygit.enable = true;
     eza.enable = true;
     zoxide.enable = true;
+    thunderbird.enable = true;
   };
 }
