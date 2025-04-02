@@ -21,6 +21,8 @@
       treefmt
       statix
       pnpm
+      nodejs
+      awscli2
     ]
     ++ (with inputs; [
       nvim.packages.${system}.default
