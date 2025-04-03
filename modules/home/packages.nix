@@ -37,6 +37,5 @@
     lazygit.enable = true;
     eza.enable = true;
     zoxide.enable = true;
-    thunderbird.enable = true;
   };
 }

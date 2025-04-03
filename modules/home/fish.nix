@@ -7,7 +7,7 @@
       bind -M insert \cf accept-autosuggestion
 
       abbr -a lgit "lazygit"
-      abbr -a nb "nixos-rebuild switch --flake /etc/nixos#"
+      abbr -a y "yazi"
     '';
   };
 }
