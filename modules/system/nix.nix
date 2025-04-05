@@ -16,10 +16,7 @@
   ];
 
   nixpkgs = {
-    config = {
-      allowAliases = false;
-      allowUnfree = true;
-    };
+    config.allowUnfree = true;
     overlays = [
       (final: prev: {
         mutter = prev.mutter.overrideAttrs (old: {
@@ -33,6 +30,9 @@
   };
 
   home-manager = {
+    users.${user} = import ../../home.nix;
+    backupFileExtension = "backup";
+    useGlobalPkgs = true;
     extraSpecialArgs = {
       inherit
         inputs
@@ -41,8 +41,6 @@
         user
         ;
     };
-    users.${user} = import ../../home.nix;
-    backupFileExtension = "backup";
   };
 
   programs.nh = {
