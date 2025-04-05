@@ -17,6 +17,7 @@
       bitwarden-desktop
       vlc
       qbittorrent
+      spotify
       # dev tools
       ripgrep
       nixfmt-rfc-style
