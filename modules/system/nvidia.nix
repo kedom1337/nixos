@@ -9,7 +9,10 @@
 
   config = lib.mkIf config.enableNvidia {
     hardware = {
-      nvidia.open = true;
+      nvidia = {
+        open = true;
+        powerManagement.enable = true;
+      };
       graphics = {
         enable = true;
         extraPackages = with pkgs; [
