@@ -26,6 +26,7 @@
       pnpm
       nodejs
       awscli2
+      prettierd
     ]
     ++ (with inputs; [
       nvim.packages.${system}.default
