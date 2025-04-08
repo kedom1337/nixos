@@ -20,6 +20,8 @@
     extensions = [
       { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # ublock origin
       { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } # sponsor block
+      { id = "fmkadmapgofadopljbjfkapdkoienihi"; } # react dev tools
+      { id = "dbepggeogbaibhgnhhndojpepiihcmeb"; } # vimium
     ];
   };
 }
