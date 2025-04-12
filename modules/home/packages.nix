@@ -12,6 +12,7 @@
       gnomeExtensions.pop-shell
       lm_sensors
       pavucontrol
+      mkcert
       # apps
       vesktop
       bitwarden-desktop
