@@ -13,12 +13,16 @@
       lm_sensors
       pavucontrol
       mkcert
+      unzip
+      p7zip
       # apps
       vesktop
       bitwarden-desktop
       vlc
       qbittorrent
       spotify
+      libreoffice-fresh
+      darktable
       # dev tools
       ripgrep
       nixfmt-rfc-style
