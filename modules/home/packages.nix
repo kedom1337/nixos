@@ -15,6 +15,9 @@
       mkcert
       unzip
       p7zip
+      hunspell
+      hunspellDicts.en_US
+      hunspellDicts.de_DE
       # apps
       vesktop
       bitwarden-desktop
@@ -23,6 +26,7 @@
       spotify
       libreoffice-fresh
       darktable
+      poedit
       # dev tools
       ripgrep
       nixfmt-rfc-style
@@ -33,6 +37,7 @@
       awscli2
       prettierd
       yaak
+      uv
     ]
     ++ (with inputs; [
       nvim.packages.${system}.default
