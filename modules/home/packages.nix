@@ -27,6 +27,7 @@
       libreoffice-fresh
       darktable
       poedit
+      obsidian
       # dev tools
       ripgrep
       nixfmt-rfc-style
