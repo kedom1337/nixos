@@ -28,7 +28,6 @@
       darktable
       poedit
       obsidian
-      zed-editor
       # dev tools
       ripgrep
       nixfmt-rfc-style

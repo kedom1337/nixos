@@ -10,5 +10,6 @@
     ./bun.nix
     ./kitty.nix
     ./thunderbird.nix
+    ./zed.nix
   ];
 }
