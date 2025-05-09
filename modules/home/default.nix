@@ -7,7 +7,6 @@
     ./yazi.nix
     ./chromium.nix
     ./git.nix
-    ./zed.nix
     ./bun.nix
     ./kitty.nix
     ./thunderbird.nix
