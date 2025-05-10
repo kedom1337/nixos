@@ -8,17 +8,20 @@
   home.packages =
     with pkgs;
     [
-      # system
+      # system packages
       gnomeExtensions.pop-shell
-      lm_sensors
-      pavucontrol
-      mkcert
-      unzip
-      p7zip
       hunspell
       hunspellDicts.en_US
       hunspellDicts.de_DE
-      # apps
+      pavucontrol
+      lm_sensors
+      mkcert
+      unzip
+      p7zip
+      ripgrep
+      fd
+      sqlite
+      # desktop apps
       vesktop
       bitwarden-desktop
       vlc
@@ -28,8 +31,8 @@
       darktable
       poedit
       obsidian
-      # dev tools
-      ripgrep
+      yaak
+      # dev cli tools
       nixfmt-rfc-style
       treefmt
       statix
@@ -37,7 +40,6 @@
       nodejs
       awscli2
       prettierd
-      yaak
       uv
     ]
     ++ (with inputs; [
