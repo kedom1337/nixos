@@ -11,5 +11,6 @@
     ./kitty.nix
     ./thunderbird.nix
     ./zed.nix
+    ./ghostty.nix
   ];
 }

@@ -94,8 +94,8 @@
       };
       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
         binding = "<Super>t";
-        command = "kitty";
-        name = "Open kitty";
+        command = "ghostty";
+        name = "Open terminal";
       };
       "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";
     };
