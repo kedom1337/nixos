@@ -34,19 +34,14 @@ in
     };
     userKeymaps = [
       {
-        context = "Workspace";
-        bindings = {
-          "${leader} e" = "pane::RevealInProjectPanel";
-          "${leader} g" = "git_panel::ToggleFocus";
-          "${leader} a" = "assistant::ToggleFocus";
-          "${leader} t" = "terminal_panel::ToggleFocus";
-        };
-      }
-      {
         context = "Editor && (vim_mode == normal || vim_mode == visual) && !menu";
         bindings = {
           "${leader} q" = "pane::CloseActiveItem";
           "${leader} w" = "workspace::Save";
+          "${leader} e" = "pane::RevealInProjectPanel";
+          "${leader} g" = "git_panel::ToggleFocus";
+          "${leader} a" = "assistant::ToggleFocus";
+          "${leader} t" = "terminal_panel::ToggleFocus";
           s = "vim::PushSneak";
           shift-s = "vim::PushSneakBackward";
         };
