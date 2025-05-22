@@ -3,6 +3,7 @@
     services = {
       printing.enable = true;
       pulseaudio.enable = false;
+      postgresql.enable = true;
       pipewire = {
         enable = true;
         alsa.enable = true;

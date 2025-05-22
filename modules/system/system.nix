@@ -19,7 +19,23 @@
     '';
   };
 
-  security.rtkit.enable = true;
+  security = {
+    rtkit.enable = true;
+    sudo.extraRules = [
+      {
+        users = [ "kedom" ];
+        commands = [
+          {
+            command = "/opt/sst/sst1 tunnel start *";
+            options = [
+              "NOPASSWD"
+              "SETENV"
+            ];
+          }
+        ];
+      }
+    ];
+  };
 
   virtualisation.docker = {
     enable = true;

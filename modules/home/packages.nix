@@ -21,6 +21,7 @@
       ripgrep
       fd
       sqlite
+      lsof
       # desktop apps
       vesktop
       bitwarden-desktop
