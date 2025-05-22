@@ -42,6 +42,7 @@
       awscli2
       prettierd
       uv
+      ffmpeg
     ]
     ++ (with inputs; [
       nvim.packages.${system}.default
