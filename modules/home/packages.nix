@@ -23,7 +23,7 @@
       sqlite
       lsof
       # desktop apps
-      vesktop
+      discord
       bitwarden-desktop
       vlc
       qbittorrent
