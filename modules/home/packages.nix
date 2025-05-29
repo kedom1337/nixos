@@ -33,6 +33,7 @@
       poedit
       obsidian
       yaak
+      pgweb
       # dev cli tools
       nixfmt-rfc-style
       treefmt

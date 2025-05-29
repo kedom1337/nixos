@@ -14,21 +14,7 @@
     "nix-command"
     "flakes"
   ];
-
-  nixpkgs = {
-    config.allowUnfree = true;
-    overlays = [
-      (final: prev: {
-        mutter = prev.mutter.overrideAttrs (old: {
-          src = inputs.mutter-triple-buffering-src;
-          preConfigure = ''
-            cp -a "${inputs.gvdb-src}" ./subprojects/gvdb
-          '';
-        });
-      })
-    ];
-  };
-
+  nixpkgs.config.allowUnfree = true;
   home-manager = {
     users.${user} = import ../../home.nix;
     backupFileExtension = "backup";
@@ -42,7 +28,6 @@
         ;
     };
   };
-
   programs.nh = {
     enable = true;
     clean = {

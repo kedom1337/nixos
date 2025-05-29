@@ -6,14 +6,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    mutter-triple-buffering-src = {
-      url = "gitlab:vanvugt/mutter?ref=triple-buffering-v4-47&host=gitlab.gnome.org";
-      flake = false;
-    };
-    gvdb-src = {
-      url = "gitlab:GNOME/gvdb?ref=main&host=gitlab.gnome.org";
-      flake = false;
-    };
     nvim.url = "github:kedom1337/nvim";
   };
   outputs =
