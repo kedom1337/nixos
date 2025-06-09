@@ -22,6 +22,8 @@
       fd
       sqlite
       lsof
+      ffmpeg
+      imagemagick
       # desktop apps
       discord
       bitwarden-desktop
@@ -43,7 +45,6 @@
       awscli2
       prettierd
       uv
-      ffmpeg
     ]
     ++ (with inputs; [
       nvim.packages.${system}.default

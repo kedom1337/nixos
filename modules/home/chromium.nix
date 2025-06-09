@@ -22,6 +22,7 @@
       { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } # sponsor block
       { id = "fmkadmapgofadopljbjfkapdkoienihi"; } # react dev tools
       { id = "dbepggeogbaibhgnhhndojpepiihcmeb"; } # vimium
+      { id = "ammjkodgmmoknidbanneddgankgfejfh"; } # 7tv
     ];
   };
 }
