@@ -16,6 +16,7 @@
     extraHosts = ''
       127.0.0.1 app.kedom.dev.viaptic.com
       127.0.0.1 app.kedom.dev.k3stack.com
+      127.0.0.1 app.kedom.dev.tourenheld.com
     '';
   };
 
