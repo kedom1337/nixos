@@ -9,7 +9,6 @@
     };
     efi.canTouchEfiVariables = true;
   };
-
   networking = {
     hostName = hostname;
     networkmanager.enable = true;
@@ -19,7 +18,6 @@
       127.0.0.1 app.kedom.dev.tourenheld.com
     '';
   };
-
   security = {
     rtkit.enable = true;
     sudo.extraRules = [
@@ -37,7 +35,6 @@
       }
     ];
   };
-
   virtualisation.docker = {
     enable = true;
     rootless = {
