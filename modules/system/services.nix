@@ -10,13 +10,13 @@
         alsa.support32Bit = true;
         pulse.enable = true;
       };
+      desktopManager.gnome.enable = true;
+      displayManager.gdm = {
+        enable = true;
+        wayland = true;
+      };
       xserver = {
         enable = true;
-        desktopManager.gnome.enable = true;
-        displayManager.gdm = {
-          enable = true;
-          wayland = false;
-        };
         xkb = {
           layout = "us";
           variant = "";

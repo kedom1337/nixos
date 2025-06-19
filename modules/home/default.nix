@@ -12,5 +12,6 @@
     ./thunderbird.nix
     ./zed.nix
     ./ghostty.nix
+    ./direnv.nix
   ];
 }

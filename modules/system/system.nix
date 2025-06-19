@@ -1,5 +1,4 @@
-{ hostname, ... }:
-{
+{hostname, ...}: {
   boot.loader = {
     grub = {
       enable = true;
@@ -22,7 +21,7 @@
     rtkit.enable = true;
     sudo.extraRules = [
       {
-        users = [ "kedom" ];
+        users = ["kedom"];
         commands = [
           {
             command = "/opt/sst/sst1 tunnel start *";

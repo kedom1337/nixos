@@ -3,12 +3,10 @@
   pkgs,
   system,
   ...
-}:
-{
-  home.packages =
-    with pkgs;
+}: {
+  home.packages = with pkgs;
     [
-      # system packages
+      # packages
       gnomeExtensions.pop-shell
       hunspell
       hunspellDicts.en_US
@@ -24,6 +22,8 @@
       lsof
       ffmpeg
       imagemagick
+      pgweb
+      awscli2
       # desktop apps
       discord
       bitwarden-desktop
@@ -35,16 +35,6 @@
       poedit
       obsidian
       yaak
-      pgweb
-      # dev cli tools
-      nixfmt-rfc-style
-      treefmt
-      statix
-      pnpm
-      nodejs
-      awscli2
-      prettierd
-      uv
     ]
     ++ (with inputs; [
       nvim.packages.${system}.default

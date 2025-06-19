@@ -1,7 +1,6 @@
 let
   leader = "space";
-in
-{
+in {
   programs.zed-editor = {
     enable = true;
     extensions = [

@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.chromium = {
     enable = true;
     package = pkgs.ungoogled-chromium;
@@ -18,11 +17,11 @@
       "--disable-search-engine-collection"
     ];
     extensions = [
-      { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # ublock origin
-      { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } # sponsor block
-      { id = "fmkadmapgofadopljbjfkapdkoienihi"; } # react dev tools
-      { id = "dbepggeogbaibhgnhhndojpepiihcmeb"; } # vimium
-      { id = "ammjkodgmmoknidbanneddgankgfejfh"; } # 7tv
+      {id = "cjpalhdlnbpafiamejdnhcphjbkeiagm";} # ublock origin
+      {id = "mnjggcdmjocbbbhaepdhchncahnbgone";} # sponsor block
+      {id = "fmkadmapgofadopljbjfkapdkoienihi";} # react dev tools
+      {id = "dbepggeogbaibhgnhhndojpepiihcmeb";} # vimium
+      {id = "ammjkodgmmoknidbanneddgankgfejfh";} # 7tv
     ];
   };
 }
