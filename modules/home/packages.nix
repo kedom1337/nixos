@@ -24,6 +24,7 @@
       imagemagick
       pgweb
       awscli2
+      pnpm
       # desktop apps
       discord
       bitwarden-desktop
