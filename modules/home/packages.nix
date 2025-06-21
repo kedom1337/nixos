@@ -25,7 +25,7 @@
       pgweb
       awscli2
       pnpm
-      node
+      nodejs
       # desktop apps
       discord
       bitwarden-desktop
