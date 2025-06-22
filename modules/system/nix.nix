@@ -3,6 +3,7 @@
   system,
   homeStateVersion,
   user,
+  pkgs,
   ...
 }: {
   imports = [
@@ -27,12 +28,20 @@
         ;
     };
   };
-  programs.nh = {
-    enable = true;
-    clean = {
+  programs = {
+    nh = {
       enable = true;
-      extraArgs = "--keep-since 30d --keep 3";
+      clean = {
+        enable = true;
+        extraArgs = "--keep-since 30d --keep 3";
+      };
+      flake = "/home/${user}/nixos";
     };
-    flake = "/home/${user}/nixos";
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        stdenv.cc.cc
+      ];
+    };
   };
 }
