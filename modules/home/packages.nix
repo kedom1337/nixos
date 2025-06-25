@@ -26,6 +26,7 @@
       awscli2
       pnpm
       nodejs
+      claude-code
       # desktop apps
       discord
       bitwarden-desktop
