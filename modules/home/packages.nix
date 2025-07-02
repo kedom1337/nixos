@@ -16,13 +16,11 @@
       mkcert
       unzip
       p7zip
-      ripgrep
       fd
       sqlite
       lsof
       ffmpeg
       imagemagick
-      pgweb
       awscli2
       pnpm
       nodejs
@@ -36,7 +34,6 @@
       libreoffice-fresh
       darktable
       poedit
-      obsidian
       yaak
     ]
     ++ (with inputs; [
@@ -50,5 +47,7 @@
     lazygit.enable = true;
     eza.enable = true;
     zoxide.enable = true;
+    ripgrep.enable = true;
+    obsidian.enable = true;
   };
 }
