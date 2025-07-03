@@ -11,18 +11,7 @@
         pulse.enable = true;
       };
       desktopManager.gnome.enable = true;
-      displayManager.gdm = {
-        enable = true;
-        wayland = true;
-      };
-      xserver = {
-        enable = true;
-        xkb = {
-          layout = "us";
-          variant = "";
-          options = "caps:swapescape";
-        };
-      };
+      displayManager.gdm.enable = true;
     };
   };
 }
