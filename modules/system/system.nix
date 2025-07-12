@@ -1,4 +1,8 @@
-{hostname, ...}: {
+{
+  hostname,
+  pkgs,
+  ...
+}: {
   boot.loader = {
     grub = {
       enable = true;
@@ -10,12 +14,17 @@
   };
   networking = {
     hostName = hostname;
-    networkmanager.enable = true;
     extraHosts = ''
       127.0.0.1 app.kedom.dev.viaptic.com
       127.0.0.1 app.kedom.dev.k3stack.com
       127.0.0.1 app.kedom.dev.tourenheld.com
     '';
+    networkmanager = {
+      enable = true;
+      plugins = with pkgs; [
+        networkmanager-openvpn
+      ];
+    };
   };
   security = {
     rtkit.enable = true;
