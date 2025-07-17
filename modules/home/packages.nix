@@ -25,6 +25,8 @@
       pnpm
       nodejs
       claude-code
+      texlive.combined.scheme-full
+      typst
       # desktop apps
       discord
       bitwarden-desktop
