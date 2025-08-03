@@ -22,6 +22,7 @@
       {id = "fmkadmapgofadopljbjfkapdkoienihi";} # react dev tools
       {id = "dbepggeogbaibhgnhhndojpepiihcmeb";} # vimium
       {id = "ammjkodgmmoknidbanneddgankgfejfh";} # 7tv
+      {id = "dhdgffkkebhmkfjojejmpbldmpobfkfo";} # tampermonkey
     ];
   };
 }

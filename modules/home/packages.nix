@@ -25,7 +25,6 @@
       pnpm
       nodejs
       claude-code
-      texlive.combined.scheme-full
       typst
       # desktop apps
       discord
@@ -34,7 +33,7 @@
       qbittorrent
       spotify
       libreoffice-fresh
-      darktable
+      # darktable
       poedit
       yaak
       opencode
