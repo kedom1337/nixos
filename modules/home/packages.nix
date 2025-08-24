@@ -37,6 +37,7 @@
       poedit
       yaak
       opencode
+      calibre
     ]
     ++ (with inputs; [
       nvim.packages.${system}.default
