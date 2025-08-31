@@ -26,6 +26,7 @@
       nodejs
       claude-code
       typst
+      mitmproxy
       # desktop apps
       discord
       bitwarden-desktop
@@ -33,7 +34,7 @@
       qbittorrent
       spotify
       libreoffice-fresh
-      # darktable
+      darktable
       poedit
       yaak
       opencode
