@@ -24,9 +24,9 @@
       awscli2
       pnpm
       nodejs
-      claude-code
       typst
       mitmproxy
+      opencode
       # desktop apps
       discord
       bitwarden-desktop
@@ -37,7 +37,6 @@
       darktable
       poedit
       yaak
-      opencode
       calibre
     ]
     ++ (with inputs; [
