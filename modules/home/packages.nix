@@ -27,6 +27,7 @@
       typst
       mitmproxy
       opencode
+      tokei
       # desktop apps
       discord
       bitwarden-desktop
