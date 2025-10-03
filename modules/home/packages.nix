@@ -53,5 +53,6 @@
     zoxide.enable = true;
     ripgrep.enable = true;
     obsidian.enable = true;
+    vscode.enable = true;
   };
 }
