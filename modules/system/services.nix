@@ -26,6 +26,5 @@
       nssmdns4 = true;
       openFirewall = true;
     };
-    postgresql.enable = true;
   };
 }

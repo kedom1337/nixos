@@ -11,5 +11,6 @@
     ./zed.nix
     ./ghostty.nix
     ./direnv.nix
+    ./gpg.nix
   ];
 }

@@ -15,6 +15,8 @@
       "--popups-to-tabs"
       "--show-avatar-button=never"
       "--disable-search-engine-collection"
+      # disable Mv3
+      "--disable-features=ExtensionManifestV2Unsupported,ExtensionManifestV2Disabled"
     ];
     extensions = [
       {id = "cjpalhdlnbpafiamejdnhcphjbkeiagm";} # ublock origin

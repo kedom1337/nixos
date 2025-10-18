@@ -7,7 +7,6 @@
   home.packages = with pkgs;
     [
       # packages
-      gnomeExtensions.pop-shell
       hunspell
       hunspellDicts.en_US
       hunspellDicts.de_DE
@@ -26,8 +25,9 @@
       nodejs
       typst
       mitmproxy
-      opencode
       tokei
+      texliveFull
+      postgresql
       # desktop apps
       discord
       bitwarden-desktop
@@ -54,5 +54,6 @@
     ripgrep.enable = true;
     obsidian.enable = true;
     vscode.enable = true;
+    opencode.enable = true;
   };
 }

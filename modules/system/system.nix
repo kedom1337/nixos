@@ -4,21 +4,16 @@
   ...
 }: {
   boot.loader = {
+    efi.canTouchEfiVariables = true;
     grub = {
       enable = true;
       device = "nodev";
       efiSupport = true;
       useOSProber = true;
     };
-    efi.canTouchEfiVariables = true;
   };
   networking = {
     hostName = hostname;
-    extraHosts = ''
-      127.0.0.1 app.kedom.dev.viaptic.com
-      127.0.0.1 app.kedom.dev.k3stack.com
-      127.0.0.1 app.kedom.dev.tourenheld.com
-    '';
     networkmanager = {
       enable = true;
       plugins = with pkgs; [
