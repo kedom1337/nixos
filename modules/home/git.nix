@@ -1,7 +1,7 @@
 {
   programs.git = {
     enable = true;
-    userName = "noah";
+    userName = "kedom";
     userEmail = "kedom@vmcall.net";
     lfs.enable = true;
     extraConfig = {
