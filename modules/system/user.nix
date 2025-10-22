@@ -3,9 +3,19 @@
   user,
   ...
 }: {
-  # For vendor completions we need to enable the fish shell
-  # here ontop of enabling it in home-manager.
-  programs.fish.enable = true;
+  programs = {
+    # For vendor completions we need to enable the fish shell
+    # here ontop of enabling it in home-manager.
+    fish.enable = true;
+    # GPG support via home-manager currently has some issues
+    # Mainly issues with pinentry not working properly aswell as
+    # default settings not being optimal.
+    # https://github.com/nix-community/home-manager/issues/5383
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
+  };
   users = {
     defaultUserShell = pkgs.fish;
     users.${user} = {
