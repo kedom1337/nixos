@@ -9,8 +9,9 @@
     fish.enable = true;
     # GPG support via home-manager currently has some issues
     # Mainly issues with pinentry not working properly aswell as
-    # default settings not being optimal.
+    # the default settings not being optimal.
     # https://github.com/nix-community/home-manager/issues/5383
+    # https://github.com/nix-community/home-manager/issues/5146
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
