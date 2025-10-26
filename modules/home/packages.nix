@@ -28,6 +28,8 @@
       tokei
       texliveFull
       postgresql
+      inetutils
+      dnsutils
       # desktop apps
       discord
       bitwarden-desktop

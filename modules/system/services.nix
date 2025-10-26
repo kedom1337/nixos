@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  config.services = {
+  services = {
     xserver.enable = true;
     desktopManager.gnome.enable = true;
     displayManager.gdm = {
@@ -24,6 +24,10 @@
     avahi = {
       enable = true;
       nssmdns4 = true;
+      openFirewall = true;
+    };
+    tailscale = {
+      enable = true;
       openFirewall = true;
     };
   };
