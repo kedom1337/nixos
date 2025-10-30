@@ -30,6 +30,7 @@
       postgresql
       inetutils
       dnsutils
+      openssl
       # desktop apps
       discord
       bitwarden-desktop

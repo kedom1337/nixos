@@ -1,11 +1,13 @@
 {
   programs.git = {
     enable = true;
-    userName = "kedom";
-    userEmail = "kedom@vmcall.net";
     lfs.enable = true;
-    extraConfig = {
+    settings = {
       pull.rebase = false;
+      user = {
+        name = "kedom";
+        email = "kedom@vmcall.net";
+      };
     };
   };
 }
