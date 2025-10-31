@@ -4,7 +4,6 @@
     settings = {
       theme = "Oxocarbon";
       font-size = 11;
-      shell-integration-features = "ssh-terminfo";
       keybind = [
         "ctrl+shift+h=goto_split:left"
         "ctrl+shift+j=goto_split:down"
