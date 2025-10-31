@@ -25,6 +25,7 @@
       {id = "dbepggeogbaibhgnhhndojpepiihcmeb";} # vimium
       {id = "ammjkodgmmoknidbanneddgankgfejfh";} # 7tv
       {id = "dhdgffkkebhmkfjojejmpbldmpobfkfo";} # tampermonkey
+      {id = "beakmhbijpdhipnjhnclmhgjlddhidpe";} # linkding
     ];
   };
 }
