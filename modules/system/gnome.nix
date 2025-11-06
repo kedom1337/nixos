@@ -1,7 +1,8 @@
 {pkgs, ...}: {
   environment = {
-    systemPackages = with pkgs; [
-      gnomeExtensions.pop-shell
+    systemPackages = with pkgs.gnomeExtensions; [
+      pop-shell
+      tailscale-qs
     ];
     gnome.excludePackages = with pkgs; [
       gnome-contacts

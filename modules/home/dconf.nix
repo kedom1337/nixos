@@ -7,6 +7,7 @@
         disable-user-extensions = false;
         enabled-extensions = with pkgs.gnomeExtensions; [
           pop-shell.extensionUuid
+          tailscale-qs.extensionUuid
         ];
       };
       "org/gnome/desktop/interface" = {
