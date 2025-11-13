@@ -31,6 +31,7 @@
       inetutils
       dnsutils
       openssl
+      nix-prefetch-docker
       # desktop apps
       discord
       bitwarden-desktop
