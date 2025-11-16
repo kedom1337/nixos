@@ -35,6 +35,7 @@
       # desktop apps
       discord
       bitwarden-desktop
+      _1password-gui
       vlc
       qbittorrent
       spotify
