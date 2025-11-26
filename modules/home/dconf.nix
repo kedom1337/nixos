@@ -31,6 +31,14 @@
       "org/gnome/shell/extensions/paperwm" = {
         default-focus-mode = 2; # edge
         show-workspace-indicator = false;
+        open-window-position = 0;
+        show-open-position-icon = false;
+        open-window-position-option-right = false;
+        open-window-position-option-left = false;
+        open-window-position-option-start = false;
+        open-window-position-option-end = false;
+        open-window-position-option-down = false;
+        open-window-position-option-up = false;
       };
     };
   };
