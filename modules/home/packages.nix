@@ -45,6 +45,10 @@
       yaak
       calibre
     ]
+    ++ (with pkgs.gnomeExtensions; [
+      paperwm
+      tailscale-qs
+    ])
     ++ (with inputs; [
       nvim.packages.${system}.default
     ]);
