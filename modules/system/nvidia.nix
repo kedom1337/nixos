@@ -5,7 +5,6 @@
   ...
 }: {
   options.enableNvidia = lib.mkEnableOption "Enable NVIDIA support";
-
   config = lib.mkIf config.enableNvidia {
     services.xserver.videoDrivers = ["nvidia"];
     hardware = {

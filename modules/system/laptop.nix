@@ -4,7 +4,6 @@
   ...
 }: {
   options.enableLaptopServices = lib.mkEnableOption "Enable laptop-specific services";
-
   config = lib.mkIf config.enableLaptopServices {
     services = {
       thermald.enable = true;
