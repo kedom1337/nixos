@@ -1,11 +1,7 @@
 {pkgs, ...}: {
   services = {
-    xserver.enable = true;
     desktopManager.gnome.enable = true;
-    displayManager.gdm = {
-      enable = true;
-      wayland = false;
-    };
+    displayManager.gdm.enable = true;
     pulseaudio.enable = false;
     pipewire = {
       enable = true;

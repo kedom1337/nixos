@@ -22,11 +22,11 @@
     homeStateVersion = "24.11";
     hosts = [
       {
-        hostname = "t480";
+        hostName = "t480";
         stateVersion = "24.11";
       }
       {
-        hostname = "desktop";
+        hostName = "desktop";
         stateVersion = "24.11";
       }
     ];
@@ -34,7 +34,7 @@
     {
       nixosConfigurations = builtins.listToAttrs (
         map (host: {
-          name = host.hostname;
+          name = host.hostName;
           value = nixpkgs.lib.nixosSystem {
             inherit system;
             specialArgs = {
@@ -44,9 +44,9 @@
                 homeStateVersion
                 user
                 ;
-              inherit (host) hostname stateVersion;
+              inherit (host) hostName stateVersion;
             };
-            modules = [./hosts/${host.hostname}/configuration.nix];
+            modules = [./hosts/${host.hostName}/configuration.nix];
           };
         })
         hosts

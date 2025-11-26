@@ -1,5 +1,5 @@
 {
-  hostname,
+  hostName,
   pkgs,
   ...
 }: {
@@ -13,7 +13,7 @@
     };
   };
   networking = {
-    hostName = hostname;
+    inherit hostName;
     networkmanager = {
       enable = true;
       plugins = with pkgs; [
@@ -21,23 +21,7 @@
       ];
     };
   };
-  security = {
-    rtkit.enable = true;
-    sudo.extraRules = [
-      {
-        users = ["kedom"];
-        commands = [
-          {
-            command = "/opt/sst/sst1 tunnel start *";
-            options = [
-              "NOPASSWD"
-              "SETENV"
-            ];
-          }
-        ];
-      }
-    ];
-  };
+  security.rtkit.enable = true;
   virtualisation.docker = {
     enable = true;
     rootless = {
