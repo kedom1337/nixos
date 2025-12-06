@@ -1,9 +1,9 @@
 {
+  pkgs,
   inputs,
   system,
   homeStateVersion,
   user,
-  pkgs,
   ...
 }: {
   imports = [
