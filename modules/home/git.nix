@@ -13,7 +13,10 @@
         name = "kedom";
         email = "kedom@vmcall.net";
       };
-      gpg.format = "ssh";
+      gpg = {
+        format = "ssh";
+        ssh.allowedSignersFile = "~/.ssh/id_ed25519.pub";
+      };
     };
   };
 }
