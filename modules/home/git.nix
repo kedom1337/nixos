@@ -13,6 +13,7 @@
         name = "kedom";
         email = "kedom@vmcall.net";
       };
+      gpg.format = "ssh";
     };
   };
 }
