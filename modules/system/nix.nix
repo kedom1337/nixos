@@ -4,6 +4,7 @@
   system,
   homeStateVersion,
   user,
+  hostName,
   ...
 }: {
   imports = [
@@ -25,6 +26,7 @@
         system
         homeStateVersion
         user
+        hostName
         ;
     };
   };
