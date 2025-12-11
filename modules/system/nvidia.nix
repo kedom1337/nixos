@@ -11,6 +11,21 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
+    hardware = {
+      nvidia = {
+        open = true;
+        powerManagement = {
+          enable = true;
+          finegrained = true;
+        };
+      };
+      graphics = {
+        enable = true;
+        extraPackages = with pkgs; [
+          nvidia-vaapi-driver
+        ];
+      };
+    };
     services = {
       xserver.videoDrivers = ["nvidia"];
       # This is a workaround for a bug where gnome shell has graphical corruption
@@ -50,21 +65,6 @@ in {
             ExecStart = ''${pkgs.procps}/bin/pkill -f -CONT ${pkgs.gnome-shell}/bin/gnome-shell'';
           };
         };
-      };
-    };
-    hardware = {
-      nvidia = {
-        open = true;
-        powerManagement = {
-          enable = true;
-          finegrained = true;
-        };
-      };
-      graphics = {
-        enable = true;
-        extraPackages = with pkgs; [
-          nvidia-vaapi-driver
-        ];
       };
     };
   };
