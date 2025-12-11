@@ -51,6 +51,7 @@
     ])
     ++ (with inputs; [
       nvim.packages.${system}.default
+      llm-agents.packages.${system}.opencode
     ]);
 
   programs = {
@@ -63,6 +64,6 @@
     ripgrep.enable = true;
     obsidian.enable = true;
     vscode.enable = true;
-    opencode.enable = true;
+    # opencode.enable = true;
   };
 }
