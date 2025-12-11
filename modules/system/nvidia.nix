@@ -14,10 +14,7 @@ in {
     hardware = {
       nvidia = {
         open = true;
-        powerManagement = {
-          enable = true;
-          finegrained = true;
-        };
+        powerManagement.enable = true;
       };
       graphics = {
         enable = true;
