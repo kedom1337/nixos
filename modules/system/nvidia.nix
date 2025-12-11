@@ -3,15 +3,17 @@
   pkgs,
   lib,
   ...
-}: {
-  options.enableNvidia = lib.mkEnableOption "Enable NVIDIA support";
-  config = lib.mkIf config.enableNvidia {
+}: let
+  cfg = config.modules.system.nvidia;
+in {
+  options.modules.system.nvidia = {
+    enable = lib.mkEnableOption "Enable NVIDIA support";
+  };
+
+  config = lib.mkIf cfg.enable {
     services.xserver.videoDrivers = ["nvidia"];
     hardware = {
-      nvidia = {
-        open = true;
-        powerManagement.enable = true;
-      };
+      nvidia.open = true;
       graphics = {
         enable = true;
         extraPackages = with pkgs; [

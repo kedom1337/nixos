@@ -2,9 +2,14 @@
   config,
   lib,
   ...
-}: {
-  options.enableLaptopServices = lib.mkEnableOption "Enable laptop-specific services";
-  config = lib.mkIf config.enableLaptopServices {
+}: let
+  cfg = config.modules.system.laptopServices;
+in {
+  options.modules.system.laptopServices = {
+    enable = lib.mkEnableOption "Enable services for laptop devices";
+  };
+
+  config = lib.mkIf cfg.enable {
     services = {
       thermald.enable = true;
       power-profiles-daemon.enable = false;
