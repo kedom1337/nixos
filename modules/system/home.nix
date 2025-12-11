@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ./modules/home
+    ../home
   ];
 
   home = {

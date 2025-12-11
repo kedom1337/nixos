@@ -15,6 +15,7 @@
   outputs = {
     nixpkgs,
     flake-utils,
+    home-manager,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -30,27 +31,23 @@
         stateVersion = "24.11";
       }
     ];
+    mkHost = host: {
+      name = host.hostName;
+      value = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          inherit inputs system homeStateVersion user;
+          inherit (host) hostName stateVersion;
+        };
+        modules = [
+          home-manager.nixosModules.default
+          ./hosts/${host.hostName}/configuration.nix
+        ];
+      };
+    };
   in
     {
-      nixosConfigurations = builtins.listToAttrs (
-        map (host: {
-          name = host.hostName;
-          value = nixpkgs.lib.nixosSystem {
-            inherit system;
-            specialArgs = {
-              inherit
-                inputs
-                system
-                homeStateVersion
-                user
-                ;
-              inherit (host) hostName stateVersion;
-            };
-            modules = [./hosts/${host.hostName}/configuration.nix];
-          };
-        })
-        hosts
-      );
+      nixosConfigurations = builtins.listToAttrs (map mkHost hosts);
     }
     // flake-utils.lib.eachDefaultSystem (
       system: let

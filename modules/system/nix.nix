@@ -7,17 +7,13 @@
   hostName,
   ...
 }: {
-  imports = [
-    inputs.home-manager.nixosModules.default
-  ];
-
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
   nixpkgs.config.allowUnfree = true;
   home-manager = {
-    users.${user} = import ../../home.nix;
+    users.${user} = import ./home.nix;
     backupFileExtension = "backup";
     useGlobalPkgs = true;
     extraSpecialArgs = {
