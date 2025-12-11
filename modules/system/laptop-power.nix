@@ -3,10 +3,10 @@
   lib,
   ...
 }: let
-  cfg = config.modules.system.laptopServices;
+  cfg = config.modules.system.laptopPowerManagement;
 in {
-  options.modules.system.laptopServices = {
-    enable = lib.mkEnableOption "Enable services for laptop devices";
+  options.modules.system.laptopPowerManagement = {
+    enable = lib.mkEnableOption "Enable laptop power management services";
   };
 
   config = lib.mkIf cfg.enable {

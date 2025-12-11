@@ -6,6 +6,6 @@
     ./services.nix
     ./user.nix
     ./nvidia.nix
-    ./laptop.nix
+    ./laptop-power.nix
   ];
 }
