@@ -26,6 +26,7 @@
       {id = "ammjkodgmmoknidbanneddgankgfejfh";} # 7tv
       {id = "dhdgffkkebhmkfjojejmpbldmpobfkfo";} # tampermonkey
       {id = "beakmhbijpdhipnjhnclmhgjlddhidpe";} # linkding
+      {id = "nngceckbapebfimnlniiiahkandclblb";} # bitwarden
     ];
   };
 }
