@@ -12,6 +12,16 @@
     "flakes"
   ];
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [
+    (final: prev: {
+      gnomeExtensions = prev.gnomeExtensions // {
+        tailscale-qs = prev.gnomeExtensions.tailscale-qs.overrideAttrs (oldAttrs: {
+          version = "49-unstable";
+          src = "${inputs.tailscale-gnome-qs}/tailscale@joaophi.github.com";
+        });
+      };
+    })
+  ];
   home-manager = {
     users.${user} = import ./home.nix;
     backupFileExtension = "backup";

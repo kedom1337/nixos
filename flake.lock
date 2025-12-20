@@ -251,7 +251,8 @@
         "home-manager": "home-manager",
         "llm-agents": "llm-agents",
         "nixpkgs": "nixpkgs",
-        "nvim": "nvim"
+        "nvim": "nvim",
+        "tailscale-gnome-qs": "tailscale-gnome-qs"
       }
     },
     "systems": {
@@ -311,6 +312,23 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "tailscale-gnome-qs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1763247626,
+        "narHash": "sha256-QQiuude//zViw6qdquOQ7fLV2F7XO8SGvU2vO1/5R5I=",
+        "owner": "aoiwelle",
+        "repo": "tailscale-gnome-qs",
+        "rev": "94c4fdce6b9e76d0856b1f916f50b8f53388f129",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aoiwelle",
+        "ref": "fix-gnome-49",
+        "repo": "tailscale-gnome-qs",
         "type": "github"
       }
     },
