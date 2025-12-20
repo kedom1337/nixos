@@ -32,6 +32,8 @@
       dnsutils
       openssl
       nix-prefetch-docker
+      kubectl
+      minikube
       # desktop apps
       discord
       bitwarden-desktop
