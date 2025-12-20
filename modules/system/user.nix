@@ -26,6 +26,7 @@
         "networkmanager"
         "wheel"
         "kvm"
+        "docker"
       ];
     };
   };
