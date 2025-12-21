@@ -15,7 +15,7 @@
       mkcert
       unzip
       p7zip
-      fd
+      jq
       sqlite
       lsof
       ffmpeg
@@ -32,8 +32,9 @@
       dnsutils
       openssl
       nix-prefetch-docker
-      kubectl
+      kubernetes
       minikube
+      python3
       # desktop apps
       discord
       bitwarden-desktop
@@ -66,6 +67,5 @@
     ripgrep.enable = true;
     obsidian.enable = true;
     vscode.enable = true;
-    # opencode.enable = true;
   };
 }
