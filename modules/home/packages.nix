@@ -32,7 +32,7 @@
       dnsutils
       openssl
       nix-prefetch-docker
-      kubernetes
+      kubectl
       minikube
       python3
       # desktop apps
@@ -65,6 +65,7 @@
     eza.enable = true;
     zoxide.enable = true;
     ripgrep.enable = true;
+    fd.enable = true;
     obsidian.enable = true;
     vscode.enable = true;
   };
