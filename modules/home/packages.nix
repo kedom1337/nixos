@@ -68,5 +68,6 @@
     fd.enable = true;
     obsidian.enable = true;
     vscode.enable = true;
+    gh.enable = true;
   };
 }
