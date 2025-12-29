@@ -33,7 +33,7 @@
       openssl
       nix-prefetch-docker
       kubectl
-      minikube
+      kind
       python3
       # desktop apps
       discord
