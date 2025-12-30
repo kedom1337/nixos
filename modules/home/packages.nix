@@ -49,6 +49,7 @@
       yaak
       calibre
       nextcloud-talk-desktop
+      projectlibre
     ]
     ++ (with pkgs.gnomeExtensions; [
       paperwm
