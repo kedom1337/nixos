@@ -33,6 +33,7 @@
       openssl
       nix-prefetch-docker
       kubectl
+      kubernetes-helm
       kind
       python3
       # desktop apps
@@ -47,6 +48,7 @@
       poedit
       yaak
       calibre
+      nextcloud-talk-desktop
     ]
     ++ (with pkgs.gnomeExtensions; [
       paperwm
