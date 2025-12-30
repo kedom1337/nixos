@@ -33,7 +33,7 @@
       openssl
       nix-prefetch-docker
       kubectl
-      minikube
+      kind
       python3
       # desktop apps
       discord
@@ -69,5 +69,6 @@
     fd.enable = true;
     obsidian.enable = true;
     vscode.enable = true;
+    gh.enable = true;
   };
 }
