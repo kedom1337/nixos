@@ -47,6 +47,7 @@
       poedit
       yaak
       calibre
+      projectlibre
     ]
     ++ (with pkgs.gnomeExtensions; [
       paperwm
