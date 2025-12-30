@@ -35,6 +35,7 @@
       kubectl
       kubernetes-helm
       kind
+      k9s
       python3
       # desktop apps
       discord
@@ -50,6 +51,7 @@
       calibre
       nextcloud-talk-desktop
       projectlibre
+      meld
     ]
     ++ (with pkgs.gnomeExtensions; [
       paperwm

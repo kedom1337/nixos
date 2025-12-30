@@ -24,7 +24,9 @@ in {
         name = "kedom";
         email = "kedom@vmcall.net";
       };
-      pull.rebase = false;
+      pull.ff = "only";
+      diff.tool = "meld";
+      merge.tool = "meld";
       gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
     };
   };

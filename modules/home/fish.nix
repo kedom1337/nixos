@@ -10,6 +10,7 @@
 
       abbr -a lgit "lazygit"
       abbr -a y "yazi"
+      abbr -a k "kubectl"
     '';
   };
 }
