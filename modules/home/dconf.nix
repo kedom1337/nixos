@@ -28,6 +28,10 @@
         focus-mode = "sloppy";
       };
       "org/gnome/desktop/peripherals/mouse".accel-profile = "flat";
+      "org/gnome/shell/extensions/paperwm/keybindings" = {
+        switch-next = ["<Super>k"];
+        switch-previous = ["<Super>j"];
+      };
       "org/gnome/shell/extensions/paperwm" = {
         show-workspace-indicator = false;
         show-focus-mode-icon = false;

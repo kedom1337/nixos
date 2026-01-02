@@ -52,6 +52,7 @@
       nextcloud-talk-desktop
       projectlibre
       meld
+      drawing
     ]
     ++ (with pkgs.gnomeExtensions; [
       paperwm
