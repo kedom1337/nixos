@@ -31,6 +31,8 @@
       "org/gnome/shell/extensions/paperwm/keybindings" = {
         switch-next = ["<Super>k"];
         switch-previous = ["<Super>j"];
+        move-right = ["<Super><Ctrl>k" "<Super><Shift>k" "<Super><Ctrl>Right"];
+        move-left = ["<Super><Ctrl>j" "<Super><Shift>j" "<Super><Ctrl>Left"];
       };
       "org/gnome/shell/extensions/paperwm" = {
         show-workspace-indicator = false;
