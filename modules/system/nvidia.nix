@@ -1,6 +1,5 @@
 {
   config,
-  pkgs,
   lib,
   ...
 }: let
@@ -12,15 +11,10 @@ in {
 
   config = lib.mkIf cfg.enable {
     hardware = {
+      graphics.enable = true;
       nvidia = {
         open = true;
         powerManagement.enable = true;
-      };
-      graphics = {
-        enable = true;
-        extraPackages = with pkgs; [
-          nvidia-vaapi-driver
-        ];
       };
     };
     services.xserver.videoDrivers = ["nvidia"];

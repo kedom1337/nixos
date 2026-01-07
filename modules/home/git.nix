@@ -1,4 +1,8 @@
-{hostName, ...}: let
+{
+  user,
+  hostName,
+  ...
+}: let
   signKeys = {
     desktop = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKu4aqjfTRLu3DTl/YzgObwinrPKKFx9/yPNWvaAFEWv kedom@desktop";
     t480 = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINclt0A84Dn613MpK68mxlpaK6q3uLhB/SFKidaygRta kedom@t480";
@@ -18,6 +22,17 @@ in {
       format = "ssh";
       key = signKey;
       signByDefault = true;
+    };
+    maintenance = {
+      enable = true;
+      repositories = let
+        gitDir = "/home/${user}/Public/Git/";
+      in [
+        (gitDir + "gogether/mono")
+        (gitDir + "gogether/server")
+        (gitDir + "nvim")
+        (gitDir + "nixbox")
+      ];
     };
     settings = {
       user = {

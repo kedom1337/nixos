@@ -17,6 +17,11 @@
       "--disable-search-engine-collection"
       # disable Mv3
       "--disable-features=ExtensionManifestV2Unsupported,ExtensionManifestV2Disabled"
+      # Disable all hardware video decoding to fix green artifacts on VP8/VP9
+      # NVIDIA + VAAPI has known issues with certain codecs
+      # Note: --disable-features must appear only once (comma-separated)
+      # "--disable-accelerated-video-decode"
+      # "--disable-features=VaapiVideoDecoder,ExtensionManifestV2Unsupported,ExtensionManifestV2Disabled"
     ];
     extensions = [
       {id = "cjpalhdlnbpafiamejdnhcphjbkeiagm";} # ublock origin
