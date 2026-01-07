@@ -27,6 +27,8 @@ in {
       pull.ff = "only";
       diff.tool = "meld";
       merge.tool = "meld";
+      column.ui = "auto";
+      branch.sort = "-committerdate";
       gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
     };
   };
