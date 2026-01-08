@@ -9,9 +9,10 @@
         bind -M insert \cf accept-autosuggestion
         bind -M insert \cr history-pager
 
-        abbr -a lgit "lazygit"
-        abbr -a y "yazi"
-        abbr -a k "kubectl"
+        abbr -a y   "yazi"
+        abbr -a k   "kubectl"
+        abbr -a kn  "kubens"
+        abbr -a kc  "kubectx"
       '';
     };
     # Disable slow generation of man caches that fish enables automatically

@@ -36,6 +36,7 @@
       kubernetes-helm
       kind
       k9s
+      kubectx
       python3
       # desktop apps
       discord
@@ -68,6 +69,7 @@
     fastfetch.enable = true;
     lazygit.enable = true;
     eza.enable = true;
+    fzf.enable = true;
     zoxide.enable = true;
     ripgrep.enable = true;
     fd.enable = true;
