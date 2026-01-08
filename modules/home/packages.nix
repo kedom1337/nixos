@@ -49,7 +49,6 @@
       poedit
       yaak
       calibre
-      nextcloud-talk-desktop
       projectlibre
       meld
       drawing
