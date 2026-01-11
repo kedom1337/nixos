@@ -34,6 +34,7 @@
         switch-previous = ["<Super>j"];
         move-right = ["<Super><Ctrl>k" "<Super><Shift>k" "<Super><Ctrl>Right"];
         move-left = ["<Super><Ctrl>j" "<Super><Shift>j" "<Super><Ctrl>Left"];
+        center-vertically = [];
       };
       "org/gnome/shell/extensions/paperwm" = {
         show-workspace-indicator = false;
