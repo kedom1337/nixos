@@ -43,7 +43,7 @@
       enable = true;
       clean = {
         enable = true;
-        extraArgs = "--keep-since 30d --keep 3";
+        extraArgs = "--keep-since 15d --keep 3";
       };
       flake = "/home/${user}/nixos";
     };
