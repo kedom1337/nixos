@@ -67,7 +67,6 @@
     fd.enable = true;
     gh.enable = true;
     jq.enable = true;
-    awscli.enable = true;
     k9s.enable = true;
     # desktop apps
     firefox.enable = true;
