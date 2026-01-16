@@ -1,5 +1,10 @@
 {
+  inputs,
+  system,
+  ...
+}: {
   programs.ghostty = {
+    package = inputs.ghostty.packages.${system}.default;
     enable = true;
     settings = {
       theme = "Oxocarbon";
