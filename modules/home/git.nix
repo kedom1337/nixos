@@ -28,8 +28,8 @@ in {
       repositories = let
         gitDir = "/home/${user}/Public/Git/";
       in [
-        (gitDir + "gogether/mono")
-        (gitDir + "gogether/server")
+        (gitDir + "progono/mono")
+        (gitDir + "progono/server")
         (gitDir + "nvim")
         (gitDir + "nixbox")
       ];

@@ -31,6 +31,8 @@
     kind
     kubectx
     python3
+    python3Packages.jupyterlab
+    python3Packages.ipykernel
     # desktop apps
     gtranslator
     pavucontrol
